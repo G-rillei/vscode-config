@@ -1,53 +1,95 @@
 {
+  // EDITOR
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.iconTheme": "symbols",
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "symbols.hidesExplorerArrows": true,
-  "window.zoomLevel": 1,
   "editor.fontFamily": "JetBrains Mono",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 1.8,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.6,
   "editor.rulers": [80, 120],
-  "workbench.startupEditor": "newUntitledFile",
   "editor.renderLineHighlight": "gutter",
   "editor.fontLigatures": true,
-  "workbench.editor.labelFormat": "short",
-  "explorer.compactFolders": false,
-  "breadcrumbs.enabled": false,
-  "workbench.activityBar.location": "hidden",
   "editor.minimap.enabled": false,
-  "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.horizontal": "hidden",
-  "workbench.statusBar.visible": true,
-  "apc.electron": {
-    "titleBarStyle": "hiddenInset",
-    "trafficLightPosition": {
-      "x": 11,
-      "y": 10
-    }
-  },
-  "apc.header": {
-    "height": 36
-  },
-  "apc.listRow": {
-    "height": 24
-  },
-  "apc.font.family": "JetBrains Mono",
-  "apc.stylesheet": {
-    ".title .title-label": "display: none !important;",
-    ".title": "justify-content: center !important;",
-    ".title-label > h2": "display: none;",
-    ".editor-actions": "display: none;",
-    ".pane-body": "padding: 8px;"
-  },
+
+  // WINDOW
   "window.commandCenter": false,
+  "window.title": "${dirty}${activeEditorShort}",
+  "window.zoomLevel": 1,
+  "window.menuBarVisibility": "toggle",
+
+  // WORKBENCH
+  "workbench.statusBar.visible": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Min Dark",
+  "workbench.colorTheme": "ceb8c11f-f736-420b-962b-fc0db26b3708",
+  "workbench.iconTheme": "symbols",
+  "workbench.activityBar.location": "hidden",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.labelFormat": "short",
+
+  // ZEN MODE
+  "zenMode.hideStatusBar": true,
+  "zenMode.fullScreen": true,
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.showTabs": "single",
+
+  // EXPLORER
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "package.json": ".gitignore, .eslint*, vite*, *.lock, tsconfig*, README*, bun.lockb",
     ".env.local": "*.env"
   },
-  "javascript.updateImportsOnFileMove.enabled": "always"
+
+  // BACKGROUND
+  "background.enabled": false,
+  "background.fullscreen": {
+    "style": {
+      "background-position": "100% 100%",
+      "background-size": "cover",
+      "opacity": 0.1
+    },
+    "images": [
+      "file:///home/guilherme/Imagens/Wallpapers/shinobu-kocho-3840x2160-19754.jpg",
+      "file:///home/guilherme/Imagens/Wallpapers/zenitsu-agatsuma-3840x2160-20236.jpg",
+      "file:///home/guilherme/Imagens/Wallpapers/demon-slayer-3840x2160-17629.jpg",
+      "file:///home/guilherme/Imagens/Wallpapers/giyu-tomioka-demon-3840x2160-16085.jpg",
+      "file:///home/guilherme/Imagens/Wallpapers/tanjiro-kamado-3840x2160-17599.jpg",
+      "file:///home/guilherme/Imagens/Wallpapers/tanjiro-kamado-3840x2160-18718.jpg",
+      "file:///home/guilherme/Imagens/Wallpapers/zenitsu-agatsuma-3840x2160-17045.jpg",
+      "file:///home/guilherme/Imagens/Wallpapers/zenitsu-agatsuma-3840x2160-17046.jpg",
+      "file:///home/guilherme/Imagens/Wallpapers/zenitsu-agatsuma-3840x2160-19143.jpg"
+    ],
+    "random": true,
+    "interval": 60
+  },
+
+  // CODY: AI COMPLETION
+  "cody.autocomplete.triggerDelay": 3,
+  "cody.autocomplete.advanced.provider": "experimental-ollama",
+  "cody.autocomplete.experimental.ollamaOptions": {
+    "url": "http://localhost:11434",
+    "model": "deepseek-coder:6.7b"
+  },
+
+  // OTHERS
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": false,
+  "symbols.hidesExplorerArrows": true,
+
+  // FORMATTERS
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "makefile.configureOnOpen": true,
+  "svelte.enable-ts-plugin": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "cody.autocomplete.disableInsideComments": true,
+  "cody.autocomplete.formatOnAccept": true,
+  "cody.suggestions.mode": "off"
 }
